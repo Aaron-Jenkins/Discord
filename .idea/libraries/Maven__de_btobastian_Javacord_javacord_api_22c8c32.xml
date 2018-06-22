@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.btobastian.Javacord:javacord-api:22c8c32">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/btobastian/Javacord/javacord-api/22c8c32/javacord-api-22c8c32.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/btobastian/Javacord/javacord-api/22c8c32/javacord-api-22c8c32-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/btobastian/Javacord/javacord-api/22c8c32/javacord-api-22c8c32-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="discordBotApp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: #2f3e9e; -fx-background-radius: 1em;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="discordBot.ControllerSetup">
+    <children>
+        <HBox prefHeight="50.0" prefWidth="600.0" style="-fx-border-radius: 5px  5px 0 0;">
+            <children>
+                <Label alignment="CENTER" prefHeight="25.0" prefWidth="583.0" text="    Discord Bot" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Label>
+            <Button fx:id="closeApp" mnemonicParsing="false" onAction="#closeApp" prefHeight="28.0" prefWidth="31.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </HBox>
+        <Pane layoutY="50.0" prefHeight="147.0" prefWidth="600.0">
+            <children>
+                <Button fx:id="botStartStop" layoutX="472.0" layoutY="86.0" mnemonicParsing="false" onAction="#botStartStop" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: #00bcd4;" text="Start Bot" textFill="WHITE" />
+            <TextField fx:id="channelID" layoutX="154.0" layoutY="11.0" prefHeight="28.0" prefWidth="426.0" style="-fx-border-color: #6668d0; -fx-border-radius: 10; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@styles.css" />
+            <TextField fx:id="token" layoutX="154.0" layoutY="48.0" prefHeight="28.0" prefWidth="426.0" style="-fx-border-color: #6668d0; -fx-border-radius: 10; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@styles.css" />
+            <Label layoutX="20.0" layoutY="12.0" text="Client ID" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="49.0" text="Token" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginFailed" layoutX="232.0" layoutY="96.0" text="Failed to login!" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
